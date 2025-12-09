@@ -14,10 +14,12 @@ h3,
 h4,
 h5,
 h6 {
+  font-weight: 700;
   line-height: 1.2;
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
 }
 
@@ -45,4 +47,33 @@ img {
 }
 .text-on-dark {
   color: $neutral;
+}
+
+.display-1 {
+  font-weight: 700;
+  font-size: $spacing-5xl;
+  line-height: 1.2;
+}
+.display-2 {
+  font-weight: 700;
+  font-size: $spacing-3xl;
+  line-height: 1.2;
+}
+.fs-1 {
+  font-size: $spacing-3xl;
+}
+.fs-2 {
+  font-size: $spacing-xl;
+}
+.fs-3 {
+  font-size: 28px;
+}
+.fs-4 {
+  font-size: $spacing-l;
+}
+.fs-5 {
+  font-size: 20px;
+}
+.fs-6 {
+  font-size: $spacing-m;
 }

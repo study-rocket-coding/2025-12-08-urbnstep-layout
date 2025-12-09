@@ -1,0 +1,28 @@
+.hero {
+  .hero-wrapper {
+    position: relative;
+  }
+  .hero-title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    h1,
+    h3 {
+      color: $neutral;
+    }
+    h1 {
+      padding-bottom: $spacing-m;
+    }
+    h3 {
+      margin-bottom: $spacing-3xl;
+    }
+  }
+  @media (min-width: 768px) {
+    .display-2 {
+      font-size: $spacing-5xl;
+    }
+    .fs-5 {
+      font-size: 28px;
+    }
+  }
+}

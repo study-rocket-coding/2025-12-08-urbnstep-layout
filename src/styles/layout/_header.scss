@@ -5,12 +5,12 @@
   .navbar {
     display: flex;
     align-items: center;
-    gap: 48px;
+    gap: $spacing-3xl;
   }
   .navbar-nav {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: $spacing-2xl;
   }
   a {
     color: $neutral-900;
