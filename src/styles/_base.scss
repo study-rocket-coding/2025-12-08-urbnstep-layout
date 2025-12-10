@@ -33,6 +33,11 @@ img {
   height: auto;
 }
 
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
 .text-primary {
   color: $neutral-900;
 }
@@ -76,4 +81,20 @@ img {
 }
 .fs-6 {
   font-size: $spacing-m;
+}
+.label-lg {
+  font-weight: 500;
+  font-size: 20px;
+}
+.label-md {
+  font-weight: 500;
+  font-size: $spacing-m;
+}
+.label-sm {
+  font-weight: 500;
+  font-size: 14px;
+}
+.label-xs {
+  font-weight: 500;
+  font-size: $spacing-s;
 }
