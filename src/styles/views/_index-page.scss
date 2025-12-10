@@ -141,6 +141,7 @@
   background-position: center;
   background-repeat: no-repeat;
   padding: $spacing-5xl 0px;
+  overflow: hidden;
   .sale-wrapper {
     height: 100%;
     .sale-content {
@@ -209,7 +210,6 @@
     margin: $spacing-3xl auto;
     padding: 100px 0px;
     background-image: url(/assets/banner-co-branded.png);
-    aspect-ratio: 320/81;
     .sale-content {
       &::before {
         left: -70px;
