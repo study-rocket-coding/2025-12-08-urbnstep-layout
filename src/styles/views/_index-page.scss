@@ -31,7 +31,6 @@
   margin: $spacing-2xl auto;
   .section-title {
     text-align: center;
-    color: $neutral-900;
     margin-bottom: $spacing-l;
     .en-title {
       padding-bottom: $spacing-xs;
@@ -84,6 +83,51 @@
         .fs-6 {
           font-size: 20px;
         }
+      }
+    }
+  }
+}
+
+.best-seller {
+  padding: $spacing-2xl 0px;
+  .section-title {
+    margin-bottom: $spacing-m;
+  }
+  .carousel {
+    display: flex;
+    gap: $spacing-l;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 16px;
+  }
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .card {
+    flex: 0 0 100%;
+    max-width: 300px;
+    scroll-snap-align: start;
+    position: relative;
+    .label-sm {
+      color: $primary-400;
+      background-color: $primary-100;
+      padding: $spacing-xs $spacing-s;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding: $spacing-5xl 0px;
+    .section-title {
+      .fs-4 {
+        font-size: $spacing-xl;
+      }
+    }
+    .carousel {
+      .card {
+        max-width: 306px;
       }
     }
   }
