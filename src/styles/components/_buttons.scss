@@ -20,6 +20,22 @@
     font-size: 20px;
   }
 }
+.btn-filled {
+  background-color: $neutral-900;
+  font-weight: 500;
+  font-size: $spacing-m;
+  color: $neutral;
+  border-radius: $radius-xs;
+  &:hover {
+    color: $neutral-700;
+  }
+  &:focus {
+    box-shadow: 0px 0px 0px 3px #2125291a;
+  }
+  i {
+    font-size: 20px;
+  }
+}
 .right-icon {
   i {
     padding-left: $spacing-xs;

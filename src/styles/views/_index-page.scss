@@ -325,3 +325,19 @@
     }
   }
 }
+
+.call-to-action {
+  text-align: center;
+  padding: $spacing-l 0px;
+  background-color: $primary-200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $spacing-m;
+  @media (min-width: 768px) {
+    gap: $spacing-l;
+    .fs-5 {
+      font-size: $spacing-l;
+    }
+  }
+}
