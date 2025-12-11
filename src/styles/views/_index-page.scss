@@ -3,6 +3,7 @@
     position: relative;
   }
   .hero-title {
+    padding: 0px 12px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -89,7 +90,8 @@
 }
 
 .best-seller {
-  padding: $spacing-2xl 0px;
+  padding-top: $spacing-2xl;
+  padding-bottom: $spacing-2xl;
   .section-title {
     margin-bottom: $spacing-m;
   }
@@ -119,7 +121,8 @@
   }
 
   @media (min-width: 768px) {
-    padding: $spacing-5xl 0px;
+    padding-top: $spacing-5xl;
+    padding-bottom: $spacing-5xl;
     .section-title {
       .fs-4 {
         font-size: $spacing-xl;
@@ -140,7 +143,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: $spacing-5xl 0px;
+  padding-top: $spacing-5xl;
+  padding-bottom: $spacing-5xl;
   overflow: hidden;
   .sale-wrapper {
     height: 100%;
@@ -208,7 +212,8 @@
   }
   @media (min-width: 768px) {
     margin: $spacing-3xl auto;
-    padding: 100px 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-image: url(/assets/banner-co-branded.png);
     .sale-content {
       &::before {
@@ -248,7 +253,8 @@
 }
 
 .series {
-  padding: $spacing-2xl 0px;
+  padding-top: $spacing-2xl;
+  padding-bottom: $spacing-2xl;
   .section-title {
     margin-bottom: $spacing-m;
   }
@@ -295,7 +301,8 @@
   }
 
   @media (min-width: 768px) {
-    padding: $spacing-5xl 0px;
+    padding-top: $spacing-5xl;
+    padding-bottom: $spacing-5xl;
     .section-title {
       .fs-4 {
         font-size: $spacing-xl;
@@ -328,7 +335,8 @@
 
 .call-to-action {
   text-align: center;
-  padding: $spacing-l 0px;
+  padding-top: $spacing-l;
+  padding-bottom: $spacing-l;
   background-color: $primary-200;
   display: flex;
   justify-content: center;
