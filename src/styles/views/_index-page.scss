@@ -104,10 +104,6 @@
     gap: $spacing-l;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    scroll-padding: 16px;
-  }
-  .carousel::-webkit-scrollbar {
-    display: none;
   }
   .card {
     flex: 0 0 100%;
@@ -121,6 +117,9 @@
       position: absolute;
       top: 0;
       left: 0;
+    }
+    img {
+      -webkit-user-drag: none; /* 禁止預設圖片拖曳 */
     }
   }
 
@@ -348,19 +347,14 @@
     gap: 16px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    scroll-padding: 16px;
     > div {
       flex: 0 0 auto;
       max-width: 300px;
       scroll-snap-align: start;
     }
   }
-  .parent::-webkit-scrollbar {
-    display: none;
-  }
   .parent,
   .parent img {
-    user-select: none; /* 禁止選取文字 */
     -webkit-user-drag: none; /* 禁止預設圖片拖曳 */
   }
   @media (min-width: 1296px) {
