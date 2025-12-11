@@ -7,19 +7,33 @@
   </head>
   <body>
     <div id="app">
-      <header class="container">
-        <div class="navbar-wrapper">
+      <header>
+        <div class="navbar-desktop container">
           <nav class="navbar">
             <a href="#" class="navbar-brand"
               ><img src="assets/logo.svg" alt="URBNSTEP Logo"
             /></a>
             <ul class="navbar-nav">
-              <li><a href="#">商品列表</a></li>
-              <li><a href="#">品牌故事</a></li>
+              <li><a href="#" class="label-md">商品列表</a></li>
+              <li><a href="#" class="label-md">品牌故事</a></li>
             </ul>
           </nav>
-
           <a href="#" class="icon"><i class="bi bi-person"></i></a>
+        </div>
+        <div class="navbar-mobile">
+          <div class="mobile-topbar">
+            <a href="#" class="navbar-brand"
+              ><img src="assets/logo.svg" alt="URBNSTEP Logo"
+            /></a>
+            <a href="#" class="icon"><i class="bi bi-person"></i></a>
+          </div>
+
+          <nav class="navbar">
+            <ul class="navbar-nav">
+              <li><a class="nav-products label-md" href="#">商品列表</a></li>
+              <li><a class="nav-story label-md" href="#">品牌故事</a></li>
+            </ul>
+          </nav>
         </div>
       </header>
       <main>
