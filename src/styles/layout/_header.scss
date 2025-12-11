@@ -1,28 +1,30 @@
-.navbar-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  .navbar {
+header {
+  .navbar-wrapper {
     display: flex;
     align-items: center;
-    gap: 48px;
-  }
-  .navbar-nav {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-  }
-  a {
-    color: $neutral-900;
-  }
-  .icon {
-    width: 48px;
-    height: 48px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    i {
-      font-size: 24px;
+    justify-content: space-between;
+    .navbar {
+      display: flex;
+      align-items: center;
+      gap: $spacing-3xl;
+    }
+    .navbar-nav {
+      display: flex;
+      align-items: center;
+      gap: $spacing-2xl;
+    }
+    a {
+      color: $neutral-900;
+    }
+    .icon {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i {
+        font-size: 24px;
+      }
     }
   }
 }

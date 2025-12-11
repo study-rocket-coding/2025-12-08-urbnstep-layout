@@ -1,0 +1,430 @@
+.hero {
+  .hero-wrapper {
+    position: relative;
+  }
+  .hero-title {
+    padding: 0px 12px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    h1,
+    h3 {
+      color: $neutral;
+    }
+    h1 {
+      padding-bottom: $spacing-m;
+    }
+    h3 {
+      margin-bottom: $spacing-3xl;
+    }
+  }
+  @media (min-width: 768px) {
+    .display-2 {
+      font-size: $spacing-5xl;
+    }
+    .fs-5 {
+      font-size: 28px;
+    }
+  }
+}
+
+.new-arrival {
+  margin: $spacing-2xl auto;
+  .section-title {
+    text-align: center;
+    margin-bottom: $spacing-l;
+    .en-title {
+      padding-bottom: $spacing-xs;
+    }
+  }
+  .product-card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: $spacing-l;
+    .product-card {
+      width: 49%;
+      max-width: 636px;
+      img {
+        margin-bottom: $spacing-xs;
+      }
+      a {
+        color: $neutral-900;
+      }
+      .card-title {
+        padding-bottom: 0px;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    margin: $spacing-5xl auto;
+    .section-title {
+      margin-bottom: $spacing-xl;
+      .en-title {
+        padding-bottom: $spacing-s;
+      }
+      .fs-2 {
+        font-size: $spacing-3xl;
+      }
+      .fs-4 {
+        font-size: $spacing-xl;
+      }
+    }
+    .product-card-group {
+      row-gap: $spacing-2xl;
+      .product-card {
+        width: 49%;
+        max-width: 636px;
+        img {
+          margin-bottom: $spacing-s;
+        }
+        .card-title {
+          padding-bottom: $spacing-xxs;
+        }
+        .fs-6 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+.best-seller {
+  padding-top: $spacing-2xl;
+  padding-bottom: $spacing-2xl;
+  .section-title {
+    margin-bottom: $spacing-m;
+  }
+  .carousel {
+    display: flex;
+    gap: $spacing-l;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 16px;
+  }
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .card {
+    flex: 0 0 100%;
+    max-width: 300px;
+    scroll-snap-align: start;
+    position: relative;
+    .label-sm {
+      color: $primary-400;
+      background-color: $primary-100;
+      padding: $spacing-xs $spacing-s;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding-top: $spacing-5xl;
+    padding-bottom: $spacing-5xl;
+    .section-title {
+      .fs-4 {
+        font-size: $spacing-xl;
+      }
+    }
+    .carousel {
+      .card {
+        max-width: 306px;
+      }
+    }
+  }
+}
+
+.sale {
+  text-align: center;
+  margin: $spacing-l auto;
+  background-image: url(/assets/banner-co-branded-sm.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: $spacing-5xl;
+  padding-bottom: $spacing-5xl;
+  overflow: hidden;
+  .sale-wrapper {
+    height: 100%;
+    .sale-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: fit-content;
+      margin: 0 auto;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: -74px;
+        top: -28px;
+        width: $spacing-3xl;
+        height: $spacing-3xl;
+        background-image: url(/assets/star.svg);
+        background-size: cover;
+        overflow: hidden;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: -80px;
+        bottom: 40px;
+        width: 76px;
+        height: 64px;
+        background-image: url(/assets/sparkle.svg);
+        background-size: cover;
+        overflow: hidden;
+      }
+    }
+  }
+  .section-title {
+    margin-bottom: $spacing-l;
+    .fs-2 {
+      color: $neutral;
+      margin-bottom: $spacing-m;
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-xs;
+      .fs-3 {
+        color: $primary-300;
+      }
+    }
+    .fs-5 {
+      color: $neutral;
+    }
+  }
+  .paragraph-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xxs;
+    margin-bottom: $spacing-xl;
+    .paragraph-md {
+      color: $neutral-500;
+      span {
+        display: none;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    margin: $spacing-3xl auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(/assets/banner-co-branded.png);
+    .sale-content {
+      &::before {
+        left: -70px;
+        top: -28px;
+      }
+      &::after {
+        right: -40px;
+        bottom: 32px;
+      }
+    }
+    .section-title {
+      margin-bottom: $spacing-xl;
+      .fs-2 {
+        flex-direction: row;
+        gap: $spacing-l;
+        font-size: $spacing-3xl;
+        .fs-3 {
+          color: $primary-300;
+          font-size: $spacing-3xl;
+        }
+      }
+      .fs-5 {
+        color: $neutral;
+        font-size: $spacing-xl;
+      }
+    }
+    .paragraph-wrapper {
+      flex-direction: row;
+      gap: 0px;
+      margin-bottom: $spacing-3xl;
+      .paragraph-md {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.series {
+  padding-top: $spacing-2xl;
+  padding-bottom: $spacing-2xl;
+  .section-title {
+    margin-bottom: $spacing-m;
+  }
+  .product-card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: $spacing-l;
+    .card {
+      width: 49%;
+      aspect-ratio: 1/1;
+      position: relative;
+      overflow: hidden;
+      .card-title {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+      }
+      .fs-6 {
+        color: $neutral;
+        white-space: nowrap;
+      }
+      .en-title:hover {
+        color: $primary-300;
+      }
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+        pointer-events: none;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding-top: $spacing-5xl;
+    padding-bottom: $spacing-5xl;
+    .section-title {
+      .fs-4 {
+        font-size: $spacing-xl;
+      }
+    }
+    .product-card-group {
+      .card {
+        .card-title {
+          padding-bottom: $spacing-xxs;
+        }
+        .fs-6 {
+          font-size: $spacing-l;
+        }
+        .en-title {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    .product-card-group {
+      justify-content: flex-start;
+      column-gap: $spacing-l;
+      .card {
+        max-width: 306px;
+      }
+    }
+  }
+}
+
+.style {
+  padding-top: $spacing-2xl;
+  padding-bottom: $spacing-2xl;
+  .section-title {
+    margin-bottom: $spacing-m;
+  }
+  .parent {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 16px;
+    > div {
+      flex: 0 0 auto;
+      max-width: 300px;
+      scroll-snap-align: start;
+    }
+  }
+  .parent::-webkit-scrollbar {
+    display: none;
+  }
+  .parent,
+  .parent img {
+    user-select: none; /* 禁止選取文字 */
+    -webkit-user-drag: none; /* 禁止預設圖片拖曳 */
+  }
+  @media (min-width: 1296px) {
+    .parent {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-column-gap: 8px;
+      grid-row-gap: 8px;
+      > div {
+        max-width: none;
+      }
+    }
+
+    .div1 {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    .div2 {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+    .div3 {
+      grid-area: 1 / 3 / 2 / 4;
+    }
+    .div4 {
+      grid-area: 1 / 4 / 2 / 5;
+    }
+    .div5 {
+      grid-area: 1 / 5 / 3 / 7;
+    }
+    .div6 {
+      grid-area: 2 / 1 / 4 / 3;
+    }
+    .div7 {
+      grid-area: 2 / 3 / 3 / 4;
+    }
+    .div8 {
+      grid-area: 2 / 4 / 3 / 5;
+    }
+    .div9 {
+      grid-area: 3 / 3 / 4 / 4;
+    }
+    .div10 {
+      grid-area: 3 / 4 / 4 / 5;
+    }
+    .div11 {
+      grid-area: 3 / 5 / 4 / 6;
+    }
+    .div12 {
+      grid-area: 3 / 6 / 4 / 7;
+    }
+  }
+}
+
+.call-to-action {
+  text-align: center;
+  padding-top: $spacing-l;
+  padding-bottom: $spacing-l;
+  background-color: $primary-200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $spacing-m;
+  margin-top: $spacing-l;
+  @media (min-width: 768px) {
+    gap: $spacing-l;
+    margin-top: $spacing-3xl;
+    .fs-5 {
+      font-size: $spacing-l;
+    }
+  }
+}

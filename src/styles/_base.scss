@@ -14,10 +14,12 @@ h3,
 h4,
 h5,
 h6 {
+  font-weight: 700;
   line-height: 1.2;
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
 }
 
@@ -29,6 +31,14 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+  @media (max-width: 1296px) {
+    padding: 0px 12px;
+  }
 }
 
 .text-primary {
@@ -45,4 +55,61 @@ img {
 }
 .text-on-dark {
   color: $neutral;
+}
+
+.display-1 {
+  font-weight: 700;
+  font-size: $spacing-5xl;
+  line-height: 1.2;
+}
+.display-2 {
+  font-weight: 700;
+  font-size: $spacing-3xl;
+  line-height: 1.2;
+}
+.fs-1 {
+  font-size: $spacing-3xl;
+}
+.fs-2 {
+  font-size: $spacing-xl;
+}
+.fs-3 {
+  font-size: 28px;
+}
+.fs-4 {
+  font-size: $spacing-l;
+}
+.fs-5 {
+  font-size: 20px;
+}
+.fs-6 {
+  font-size: $spacing-m;
+}
+.label-lg {
+  font-weight: 500;
+  font-size: 20px;
+}
+.label-md {
+  font-weight: 500;
+  font-size: $spacing-m;
+}
+.label-sm {
+  font-weight: 500;
+  font-size: 14px;
+}
+.label-xs {
+  font-weight: 500;
+  font-size: $spacing-s;
+}
+.paragraph-lg {
+  font-size: 20px;
+}
+.paragraph-md {
+  font-size: $spacing-m;
+}
+.paragraph-sm {
+  font-size: 14px;
+}
+.paragraph-xs {
+  font-size: $spacing-s;
 }

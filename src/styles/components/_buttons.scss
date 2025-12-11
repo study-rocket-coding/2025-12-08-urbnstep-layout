@@ -1,0 +1,48 @@
+.btn {
+  padding: 12px 24px;
+}
+.btn-small {
+  padding: 8px 16px;
+}
+.btn-primary {
+  background-color: $primary-300;
+  font-weight: 500;
+  font-size: $spacing-m;
+  color: $neutral-900;
+  border-radius: $radius-xs;
+  &:hover {
+    color: $primary-500;
+  }
+  &:focus {
+    box-shadow: 0px 0px 0px 3px #c0fa7366;
+  }
+  i {
+    font-size: 20px;
+  }
+}
+.btn-filled {
+  background-color: $neutral-900;
+  font-weight: 500;
+  font-size: $spacing-m;
+  color: $neutral;
+  border-radius: $radius-xs;
+  &:hover {
+    color: $neutral-700;
+  }
+  &:focus {
+    box-shadow: 0px 0px 0px 3px #2125291a;
+  }
+  i {
+    font-size: 20px;
+  }
+}
+.right-icon {
+  i {
+    padding-left: $spacing-xs;
+  }
+}
+.left-icon {
+  i {
+    padding-right: $spacing-xs;
+  }
+}
