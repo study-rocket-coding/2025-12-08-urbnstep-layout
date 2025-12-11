@@ -334,8 +334,10 @@
   justify-content: center;
   align-items: center;
   gap: $spacing-m;
+  margin-top: $spacing-l;
   @media (min-width: 768px) {
     gap: $spacing-l;
+    margin-top: $spacing-3xl;
     .fs-5 {
       font-size: $spacing-l;
     }
