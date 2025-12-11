@@ -333,6 +333,83 @@
   }
 }
 
+.style {
+  padding-top: $spacing-2xl;
+  padding-bottom: $spacing-2xl;
+  .section-title {
+    margin-bottom: $spacing-m;
+  }
+  .parent {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 16px;
+    > div {
+      flex: 0 0 auto;
+      max-width: 300px;
+      scroll-snap-align: start;
+    }
+  }
+  .parent::-webkit-scrollbar {
+    display: none;
+  }
+  .parent,
+  .parent img {
+    user-select: none; /* 禁止選取文字 */
+    -webkit-user-drag: none; /* 禁止預設圖片拖曳 */
+  }
+  @media (min-width: 1296px) {
+    .parent {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-column-gap: 8px;
+      grid-row-gap: 8px;
+      > div {
+        max-width: none;
+      }
+    }
+
+    .div1 {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    .div2 {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+    .div3 {
+      grid-area: 1 / 3 / 2 / 4;
+    }
+    .div4 {
+      grid-area: 1 / 4 / 2 / 5;
+    }
+    .div5 {
+      grid-area: 1 / 5 / 3 / 7;
+    }
+    .div6 {
+      grid-area: 2 / 1 / 4 / 3;
+    }
+    .div7 {
+      grid-area: 2 / 3 / 3 / 4;
+    }
+    .div8 {
+      grid-area: 2 / 4 / 3 / 5;
+    }
+    .div9 {
+      grid-area: 3 / 3 / 4 / 4;
+    }
+    .div10 {
+      grid-area: 3 / 4 / 4 / 5;
+    }
+    .div11 {
+      grid-area: 3 / 5 / 4 / 6;
+    }
+    .div12 {
+      grid-area: 3 / 6 / 4 / 7;
+    }
+  }
+}
+
 .call-to-action {
   text-align: center;
   padding-top: $spacing-l;
