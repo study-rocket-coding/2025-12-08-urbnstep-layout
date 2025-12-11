@@ -2,6 +2,10 @@
   .hero-wrapper {
     position: relative;
   }
+  picture,
+  img {
+    width: 100%;
+  }
   .hero-title {
     padding: 0px 12px;
     position: absolute;
