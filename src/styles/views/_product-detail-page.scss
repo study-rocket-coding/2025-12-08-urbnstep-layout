@@ -1,0 +1,43 @@
+.product-detail-page {
+  .best-seller {
+    padding-top: $spacing-2xl;
+    padding-bottom: $spacing-2xl;
+    .section-title {
+      margin-bottom: $spacing-m;
+    }
+    .carousel {
+      display: flex;
+      gap: $spacing-l;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+    }
+    .card {
+      flex: 0 0 100%;
+      max-width: 300px;
+      scroll-snap-align: start;
+      position: relative;
+      img {
+        -webkit-user-drag: none; /* 禁止預設圖片拖曳 */
+        margin-bottom: $spacing-s;
+      }
+      .card-title {
+        margin-bottom: $spacing-xxs;
+      }
+    }
+
+    @media (min-width: 768px) {
+      padding-top: $spacing-3xl;
+      padding-bottom: $spacing-3xl;
+      .section-title {
+        .fs-5 {
+          font-size: $spacing-l;
+        }
+      }
+      .carousel {
+        .card {
+          max-width: 306px;
+        }
+      }
+    }
+  }
+}
