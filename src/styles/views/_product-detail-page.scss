@@ -1,4 +1,19 @@
 .product-detail-page {
+  .product-info {
+    .details-list {
+      .details-item {
+        padding: 12px 0px;
+        border-bottom: 1px solid #dee2e6;
+      }
+      .details-title {
+        padding-bottom: 4px;
+      }
+      .details-text {
+        color: $neutral-600;
+      }
+    }
+  }
+
   .best-seller {
     padding-top: $spacing-2xl;
     padding-bottom: $spacing-2xl;
