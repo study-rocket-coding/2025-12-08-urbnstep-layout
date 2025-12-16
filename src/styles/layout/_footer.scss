@@ -17,6 +17,9 @@ footer {
       display: block;
       color: $neutral-900;
       padding: 12px 0px;
+      &:hover {
+        color: $neutral-600;
+      }
     }
   }
   .copyright {
