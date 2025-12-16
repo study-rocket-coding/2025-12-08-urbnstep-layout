@@ -49,11 +49,14 @@
     .product-card {
       width: 49%;
       max-width: 636px;
-      img {
-        margin-bottom: $spacing-xs;
-      }
       a {
         color: $neutral-900;
+        img {
+          margin-bottom: $spacing-xs;
+        }
+        &:hover img {
+          opacity: 0.8;
+        }
       }
       .card-title {
         padding-bottom: 0px;
@@ -110,6 +113,9 @@
     max-width: 300px;
     scroll-snap-align: start;
     position: relative;
+    a {
+      display: block;
+    }
     .label-sm {
       color: $primary-400;
       background-color: $primary-100;
