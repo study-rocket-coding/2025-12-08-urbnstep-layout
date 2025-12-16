@@ -1,5 +1,12 @@
 .btn {
   padding: 12px 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-xs;
+  i::before {
+    vertical-align: middle;
+  }
 }
 .btn-small {
   padding: 8px 16px;
@@ -26,8 +33,9 @@
   font-size: $spacing-m;
   color: $neutral;
   border-radius: $radius-xs;
+  border: none;
   &:hover {
-    color: $neutral-700;
+    background-color: $neutral-700;
   }
   &:focus {
     box-shadow: 0px 0px 0px 3px #2125291a;
@@ -36,13 +44,80 @@
     font-size: 20px;
   }
 }
-.right-icon {
+.btn-outlined {
+  background-color: $neutral;
+  font-weight: 500;
+  font-size: $spacing-m;
+  color: $neutral-900;
+  border-radius: $radius-xs;
+  border: 1px solid $neutral-900;
+  &:hover {
+    background-color: $neutral-900;
+    color: $neutral;
+  }
+  &:focus {
+    box-shadow: 0px 0px 0px 3px #2125291a;
+  }
   i {
-    padding-left: $spacing-xs;
+    font-size: 20px;
   }
 }
-.left-icon {
-  i {
-    padding-right: $spacing-xs;
+.btn-option {
+  background-color: $neutral;
+  font-weight: 500;
+  font-size: $spacing-m;
+  color: $neutral-900;
+  border-radius: $radius-xs;
+  border: 1px solid $neutral-300;
+  &:hover {
+    border: 1px solid $neutral-600;
+  }
+  &:disabled {
+    border: 1px solid $neutral-300;
+    color: $neutral-500;
+    cursor: not-allowed;
+  }
+}
+
+.icon-btn {
+  font-size: $spacing-l;
+  width: $spacing-3xl;
+  height: $spacing-3xl;
+  padding: $spacing-s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  i::before {
+    vertical-align: middle;
+  }
+}
+.icon-btn-small {
+  font-size: 20px;
+  width: $spacing-2xl;
+  height: $spacing-2xl;
+}
+.icon-btn-primary {
+  border: none;
+  border-radius: $radius-xs;
+  background-color: transparent;
+  &:hover {
+    color: $primary-400;
+  }
+  &:focus {
+    background-color: $primary-100;
+  }
+}
+.icon-btn-outlined {
+  border: 2px solid $neutral-200;
+  border-radius: $radius-xs;
+  &:hover {
+    color: $primary-500;
+    background-color: $primary-100;
+    border: 2px solid $primary-300;
+  }
+  &:focus {
+    color: $neutral-900;
+    background-color: $primary-100;
+    border: 2px solid $primary-300;
   }
 }
