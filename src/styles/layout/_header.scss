@@ -47,6 +47,8 @@ header {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding-top: $spacing-m;
+      padding-bottom: $spacing-m;
       .navbar {
         display: flex;
         align-items: center;

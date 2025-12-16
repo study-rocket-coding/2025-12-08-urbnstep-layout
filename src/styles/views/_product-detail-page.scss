@@ -185,6 +185,8 @@
       }
     }
     @media (min-width: 992px) {
+      padding-top: $spacing-5xl;
+      padding-bottom: $spacing-5xl;
       .product-images {
         grid-column: span 7;
       }
@@ -193,8 +195,6 @@
       }
     }
     @media (min-width: 768px) {
-      padding-top: $spacing-5xl;
-      padding-bottom: $spacing-5xl;
       .product-images {
         margin-left: 0px;
         margin-right: 0px;
