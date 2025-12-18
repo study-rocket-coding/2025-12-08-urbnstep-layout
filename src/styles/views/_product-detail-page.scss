@@ -149,13 +149,25 @@
       .btn {
         width: 100%;
       }
+      .btn-outlined::after {
+        content: "加入收藏";
+      }
       .btn-outlined:active {
         color: $neutral-900;
         background-color: $neutral;
         border: 1px solid $neutral-900;
-        .bi-heart::before {
-          content: "\f415";
+        &::after {
+          content: "已收藏";
         }
+      }
+      .btn-outlined:focus {
+        &::after {
+          content: "已收藏";
+        }
+      }
+      .btn-outlined:active .bi-heart::before,
+      .btn-outlined:focus .bi-heart::before {
+        content: "\f415";
       }
       .icon-btn-primary {
         &:hover {
