@@ -77,6 +77,12 @@
     .option-title {
       padding-bottom: $spacing-xs;
     }
+    .option-label {
+      cursor: pointer;
+    }
+    input:disabled + .option-label {
+      cursor: not-allowed;
+    }
     .colors-list {
       display: flex;
       gap: $spacing-xs;
@@ -86,12 +92,12 @@
         width: $spacing-5xl;
         -webkit-user-drag: none;
       }
-      input:hover + label {
+      input:hover + .option-label {
         img {
           opacity: 0.8;
         }
       }
-      input:checked + label {
+      input:checked + .option-label {
         img {
           border: 1px solid $neutral-900;
         }
@@ -99,8 +105,7 @@
           color: $neutral-900;
         }
       }
-      input:disabled + label {
-        cursor: not-allowed;
+      input:disabled + .option-label {
         img {
           opacity: 0.4;
         }
@@ -118,13 +123,13 @@
         gap: 0;
         white-space: nowrap;
       }
-      input:hover + label {
+      input:hover + .option-label {
         border: 1px solid $neutral-600;
       }
-      input:checked + label {
+      input:checked + .option-label {
         border: 1px solid $neutral-900;
       }
-      input:disabled + label {
+      input:disabled + .option-label {
         cursor: not-allowed;
         border: 1px solid $neutral-300;
         span {
@@ -144,13 +149,25 @@
       .btn {
         width: 100%;
       }
+      .btn-outlined::after {
+        content: "加入收藏";
+      }
       .btn-outlined:active {
         color: $neutral-900;
         background-color: $neutral;
         border: 1px solid $neutral-900;
-        .bi-heart::before {
-          content: "\f415";
+        &::after {
+          content: "已收藏";
         }
+      }
+      .btn-outlined:focus {
+        &::after {
+          content: "已收藏";
+        }
+      }
+      .btn-outlined:active .bi-heart::before,
+      .btn-outlined:focus .bi-heart::before {
+        content: "\f415";
       }
       .icon-btn-primary {
         &:hover {
@@ -244,7 +261,7 @@
     .section-title {
       margin-bottom: $spacing-m;
     }
-    .carousel {
+    .scroll-list {
       display: flex;
       gap: $spacing-l;
       overflow-x: auto;
@@ -255,8 +272,13 @@
       max-width: 300px;
       scroll-snap-align: start;
       position: relative;
+      a {
+        color: $neutral-900;
+        &:hover img {
+          opacity: 0.7;
+        }
+      }
       img {
-        -webkit-user-drag: none; /* 禁止預設圖片拖曳 */
         margin-bottom: $spacing-s;
       }
       .card-title {
@@ -272,7 +294,7 @@
           font-size: $spacing-l;
         }
       }
-      .carousel {
+      .scroll-list {
         .card {
           max-width: 306px;
         }
